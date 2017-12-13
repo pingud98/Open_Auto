@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2440,6 +2440,22 @@ type 0309, grid 2.5 mm</description>
 <text x="2.54" y="-1.905" size="0.889" layer="27" ratio="11" rot="R90">&gt;value</text>
 <rectangle x1="-1.27" y1="-5.08" x2="1.27" y2="5.08" layer="39"/>
 </package>
+<package name="H3-2.54">
+<wire x1="-1.27" y1="3.81" x2="1.27" y2="3.81" width="0.127" layer="21"/>
+<wire x1="1.27" y1="3.81" x2="1.27" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-3.81" x2="-1.27" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="3.81" x2="1.27" y2="3.81" width="0" layer="39"/>
+<wire x1="1.27" y1="3.81" x2="1.27" y2="-3.81" width="0" layer="39"/>
+<wire x1="1.27" y1="-3.81" x2="-1.27" y2="-3.81" width="0" layer="39"/>
+<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="3.81" width="0" layer="39"/>
+<pad name="1" x="0" y="2.54" drill="0.889" diameter="1.651" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.889" diameter="1.651"/>
+<pad name="3" x="0" y="-2.54" drill="0.889" diameter="1.651"/>
+<text x="-1.905" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="0.889" layer="27" ratio="11" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-3.81" x2="1.27" y2="3.81" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HEADER-6P">
@@ -2467,6 +2483,17 @@ type 0309, grid 2.5 mm</description>
 <pin name="P$2" x="-7.62" y="1.27" visible="pad" length="middle"/>
 <pin name="P$3" x="-7.62" y="-1.27" visible="pad" length="middle"/>
 <pin name="P$4" x="-7.62" y="-3.81" visible="pad" length="middle"/>
+</symbol>
+<symbol name="HEADER-3P">
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<text x="-1.27" y="6.35" size="1.27" layer="96" ratio="10">&gt;value</text>
+<text x="-7.62" y="6.35" size="1.27" layer="95" ratio="10">&gt;name</text>
+<pin name="P$1" x="-7.62" y="3.81" visible="pad" length="middle" function="dotclk" swaplevel="1"/>
+<pin name="P$2" x="-7.62" y="0" visible="pad" length="middle" swaplevel="1"/>
+<pin name="P$3" x="-7.62" y="-3.81" visible="pad" length="middle" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2511,6 +2538,26 @@ type 0309, grid 2.5 mm</description>
 <technology name="">
 <attribute name="MPN" value="F185-1104A1BSYA1" constant="no"/>
 <attribute name="VALUE" value="4p-2.54" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIP-BLACK-MALE-HEADER-VERT(3P-2.54)" prefix="CN" uservalue="yes">
+<description>320020079</description>
+<gates>
+<gate name="G$1" symbol="HEADER-3P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="H3-2.54">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="3p-2.54" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9281,6 +9328,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </part>
 <part name="C12" library="Seeed-Capacitor" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="U$12" library="Power or GND " deviceset="GND_POWER" device=""/>
+<part name="CN4" library="Seeed-Connector" deviceset="DIP-BLACK-MALE-HEADER-VERT(3P-2.54)" device="" value="3p-2.54"/>
 </parts>
 <sheets>
 <sheet>
@@ -9325,6 +9373,7 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <text x="207.01" y="-40.64" size="3.81" layer="97">Power</text>
 <text x="26.67" y="-54.61" size="1.778" layer="91" rot="R90">Photon</text>
 <text x="26.67" y="-68.58" size="1.778" layer="91" rot="R90">Electron</text>
+<text x="254" y="102.87" size="1.778" layer="91">3.3 or 5V selectable</text>
 </plain>
 <instances>
 <instance part="Q1" gate="Q" x="290.83" y="53.34"/>
@@ -9534,6 +9583,7 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <attribute name="VALUE" x="405.13" y="-6.35" size="1.27" layer="96" ratio="10"/>
 </instance>
 <instance part="U$12" gate="G$1" x="412.75" y="-7.62" rot="R90"/>
+<instance part="CN4" gate="G$1" x="271.78" y="93.98" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -10131,24 +10181,6 @@ Inverting buffer added to RTC for Electron WKP.</text>
 </net>
 <net name="+5V" class="2">
 <segment>
-<wire x1="297.18" y1="83.82" x2="293.37" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="293.37" y1="81.28" x2="293.37" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="293.37" y1="83.82" x2="281.94" y2="83.82" width="0.1524" layer="91"/>
-<junction x="293.37" y="83.82"/>
-<label x="288.29" y="83.82" size="1.27" layer="95"/>
-<pinref part="D2" gate="D" pin="-"/>
-<pinref part="RELAY1" gate="G$1" pin="V+"/>
-</segment>
-<segment>
-<wire x1="297.18" y1="30.48" x2="293.37" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="293.37" y1="30.48" x2="281.94" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="293.37" y1="27.94" x2="293.37" y2="30.48" width="0.1524" layer="91"/>
-<junction x="293.37" y="30.48"/>
-<label x="288.29" y="30.48" size="1.27" layer="95"/>
-<pinref part="D3" gate="D" pin="-"/>
-<pinref part="RELAY2" gate="G$1" pin="V+"/>
-</segment>
-<segment>
 <pinref part="CN2" gate="G$1" pin="5"/>
 <wire x1="485.14" y1="85.09" x2="461.01" y2="85.09" width="0.1524" layer="91"/>
 <label x="461.01" y="85.09" size="1.778" layer="95" rot="R180"/>
@@ -10499,6 +10531,11 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <label x="160.02" y="24.13" size="1.27" layer="95" ratio="10"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="CN4" gate="G$1" pin="P$3"/>
+<wire x1="275.59" y1="86.36" x2="283.21" y2="86.36" width="0.1524" layer="91"/>
+<label x="279.4" y="86.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="5V" class="1">
 <segment>
@@ -10528,6 +10565,11 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <junction x="232.41" y="-48.26"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="232.41" y1="-55.88" x2="232.41" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CN4" gate="G$1" pin="P$1"/>
+<wire x1="267.97" y1="86.36" x2="267.97" y2="76.2" width="0.1524" layer="91"/>
+<label x="267.97" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANA_TX" class="0">
@@ -10753,6 +10795,29 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <net name="N$20" class="0">
 <segment>
 <wire x1="22.86" y1="-57.15" x2="134.62" y2="-57.15" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VRELAY" class="0">
+<segment>
+<pinref part="CN4" gate="G$1" pin="P$2"/>
+<wire x1="271.78" y1="86.36" x2="271.78" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="RELAY1" gate="G$1" pin="V+"/>
+<wire x1="271.78" y1="83.82" x2="293.37" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="D2" gate="D" pin="-"/>
+<wire x1="293.37" y1="83.82" x2="297.18" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="293.37" y1="81.28" x2="293.37" y2="83.82" width="0.1524" layer="91"/>
+<junction x="293.37" y="83.82"/>
+<label x="288.29" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D3" gate="D" pin="-"/>
+<wire x1="293.37" y1="27.94" x2="293.37" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="RELAY2" gate="G$1" pin="V+"/>
+<wire x1="293.37" y1="30.48" x2="297.18" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="30.48" x2="293.37" y2="30.48" width="0.1524" layer="91"/>
+<junction x="293.37" y="30.48"/>
+<wire x1="293.37" y1="30.48" x2="287.02" y2="30.48" width="0.1524" layer="91"/>
+<label x="279.4" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
