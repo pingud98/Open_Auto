@@ -3084,8 +3084,8 @@ type 0309, grid 2.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SMD-RES-1K-5%-1/10W(0603)" prefix="R" uservalue="yes">
-<description>301010291</description>
+<deviceset name="SMD-RES-4.7K-5%-1/10W(0603)" prefix="R" uservalue="yes">
+<description>301010290</description>
 <gates>
 <gate name="G$1" symbol="RES" x="0" y="0"/>
 </gates>
@@ -3097,8 +3097,28 @@ type 0309, grid 2.5 mm</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MPN" value="RC0603JR-071KL" constant="no"/>
-<attribute name="VALUE" value="1K 1/10W" constant="no"/>
+<attribute name="MPN" value="RC0603JR-074K7L" constant="no"/>
+<attribute name="VALUE" value="4.7K"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD-RES-2.2K-5%-1/10W(0603)" prefix="R" uservalue="yes">
+<description>301010124</description>
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="RC0603JR-072K2L" constant="no"/>
+<attribute name="VALUE" value="2.2K"/>
 </technology>
 </technologies>
 </device>
@@ -9197,16 +9217,15 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="C18" library="Seeed-Capacitor" deviceset="CERAMIC-10PF-50V-5%-NPO(0603)" device="" value="10pf"/>
 <part name="U$55" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$56" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="R31" library="Seeed-Resistor" deviceset="SMD-RES-10K-5%-1/10W(0603)" device="" value="10K"/>
+<part name="R31" library="Seeed-Resistor" deviceset="SMD-RES-4.7K-5%-1/10W(0603)" device="" value="4.7K"/>
 <part name="R32" library="Seeed-Resistor" deviceset="SMD-RES-10K-5%-1/10W(0603)" device="" value="10K"/>
 <part name="C19" library="Seeed-Capacitor" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="U$57" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="R33" library="Seeed-Resistor" deviceset="SMD-RES-10K-5%-1/10W(0603)" device="" value="10K"/>
+<part name="R33" library="Seeed-Resistor" deviceset="SMD-RES-4.7K-5%-1/10W(0603)" device="" value="4.7K"/>
 <part name="U$58" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="BAT1" library="Connector-new" deviceset="BAT-HOLDER" device="'SMD-1220'" value="CR1220-15.06*13.00*H4.1mm"/>
 <part name="C21" library="Seeed-Capacitor" deviceset="CERAMIC-10UF-6.3V-20%-X5R(0603)" device="" value="10UF 6.3V"/>
 <part name="U$17" library="Power or GND " deviceset="GND_POWER" device=""/>
-<part name="R16" library="Seeed-Resistor" deviceset="SMD-RES-1K-5%-1/10W(0603)" device="" value="1K"/>
 <part name="U$11" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="U$35" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="D10" library="Discrete" deviceset="LED*" device="'0603'" value="RED"/>
@@ -9225,7 +9244,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="R7" library="Seeed-Resistor" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
 <part name="K1" library="Seeed-Switch" deviceset="DIP-SWITCH-TACTILE-SPST-NO/TS-1109(4P-D6.0MM)" device="'TS-1109'"/>
 <part name="CN2" library="Seeed-Connector" deviceset="DIP-BLACK-FEMALE-HEADER-VERT(6P-2.54)" device="" value="6p-2.54"/>
-<part name="R21" library="Seeed-Resistor" deviceset="SMD-RES-3.9K-5%-1/10W(0603)" device="" value="3.9K"/>
+<part name="R21" library="Seeed-Resistor" deviceset="SMD-RES-4.7K-5%-1/10W(0603)" device="" value="4.7K"/>
 <part name="R20" library="Seeed-Resistor" deviceset="SMD-RES-10K-5%-1/10W(0603)" device="" value="10K"/>
 <part name="R18" library="Seeed-Resistor" deviceset="SMD-RES-10K-5%-1/10W(0603)" device="" value="10K"/>
 <part name="C14" library="Seeed-Capacitor" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
@@ -9239,13 +9258,10 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="J3" library="Seeed-Connector" deviceset="DIP-BLACK-FEMALE-HEADER-VERT(4P-2.54)" device="" value="4p-2.54"/>
 <part name="U5" library="A2235-H" deviceset="A2235-H" device=""/>
 <part name="R6" library="Seeed-Resistor" deviceset="SMD-RES-10K-5%-1/10W(0603)" device="" value="10K"/>
-<part name="R24" library="Seeed-Resistor" deviceset="SMD-RES-3.9K-5%-1/10W(0603)" device="" value="3.9K"/>
-<part name="R25" library="Seeed-Resistor" deviceset="SMD-RES-3.9K-5%-1/10W(0603)" device="" value="3.9K"/>
+<part name="R24" library="Seeed-Resistor" deviceset="SMD-RES-2.2K-5%-1/10W(0603)" device="" value="2.2K"/>
+<part name="R25" library="Seeed-Resistor" deviceset="SMD-RES-2.2K-5%-1/10W(0603)" device="" value="2.2K"/>
 <part name="IC1" library="74xx-little-us" library_urn="urn:adsk.eagle:library:87" deviceset="NC7SZ14" device="M5X" package3d_urn="urn:adsk.eagle:package:2482/1"/>
 <part name="U$2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="C1" library="Seeed-Capacitor" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf">
-<attribute name="PARTNO" value="08055C104KAT2A"/>
-</part>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="D4" library="MuniRent" deviceset="DIODE_ESD_DUAL" device="-SOT-23" value="PESD1CAN">
@@ -9266,9 +9282,6 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="R1" library="Seeed-Resistor" deviceset="SMD-RES-68K-1%-1/10W(0603)" device="" value="68K">
 <attribute name="PARTNO" value="ERJ-6ENF6202V"/>
 </part>
-<part name="R2" library="Seeed-Resistor" deviceset="SMD-RES-10K-5%-1/10W(0603)" device="" value="10K">
-<attribute name="PARTNO" value="ERJ-6ENF1002V"/>
-</part>
 <part name="D7" library="MuniRent" deviceset="BAT54S" device="">
 <attribute name="PARTNO" value="BAT54S-7-F"/>
 </part>
@@ -9280,9 +9293,6 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </part>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="C2" library="Seeed-Capacitor" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf">
-<attribute name="PARTNO" value="08055C104KAT2A"/>
-</part>
 <part name="C3" library="Seeed-Capacitor" deviceset="CERAMIC-1UF-25V-10%-X7R(0603)" device="" value="1uf">
 <attribute name="PARTNO" value="CC0805KKX7R7BB105"/>
 </part>
@@ -9329,6 +9339,13 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="C12" library="Seeed-Capacitor" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
 <part name="U$12" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="CN4" library="Seeed-Connector" deviceset="DIP-BLACK-MALE-HEADER-VERT(3P-2.54)" device="" value="3p-2.54"/>
+<part name="C5" library="Seeed-Capacitor" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
+<part name="C1" library="Seeed-Capacitor" deviceset="CERAMIC-100NF-50V-10%-X7R(0603)" device="" value="100nf"/>
+<part name="R3" library="Seeed-Resistor" deviceset="SMD-RES-10K-5%-1/10W(0603)" device="" value="10K"/>
+<part name="R2" library="Seeed-Resistor" deviceset="SMD-RES-1K-1%-1/10W(0603)" device="" value="1K"/>
+<part name="U$9" library="Power or GND " deviceset="GND_POWER" device=""/>
+<part name="CN5" library="Seeed-Connector" deviceset="DIP-BLACK-MALE-HEADER-VERT(3P-2.54)" device="" value="3p-2.54"/>
+<part name="U$10" library="Power or GND " deviceset="GND_POWER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9374,6 +9391,9 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <text x="26.67" y="-54.61" size="1.778" layer="91" rot="R90">Photon</text>
 <text x="26.67" y="-68.58" size="1.778" layer="91" rot="R90">Electron</text>
 <text x="254" y="102.87" size="1.778" layer="91">3.3 or 5V selectable</text>
+<text x="393.7" y="-44.45" size="1.778" layer="91">Ext. Ant selector
+1-2 = int
+2-3 = ext</text>
 </plain>
 <instances>
 <instance part="Q1" gate="Q" x="290.83" y="53.34"/>
@@ -9439,7 +9459,6 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <attribute name="VALUE" x="495.3" y="29.21" size="1.27" layer="96" ratio="10" rot="R90"/>
 </instance>
 <instance part="U$17" gate="G$1" x="496.57" y="24.13"/>
-<instance part="R16" gate="G$1" x="191.77" y="7.62" rot="R270"/>
 <instance part="U$11" gate="G$1" x="191.77" y="-13.97"/>
 <instance part="U$35" gate="G$1" x="223.52" y="-13.97"/>
 <instance part="D10" gate="LED" x="163.83" y="-3.81" rot="R270"/>
@@ -9495,9 +9514,6 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <instance part="IC1" gate="Q" x="425.45" y="46.99" rot="R180"/>
 <instance part="IC1" gate="P" x="396.24" y="48.26"/>
 <instance part="U$2" gate="G$1" x="200.66" y="93.98"/>
-<instance part="C1" gate="G$1" x="207.01" y="91.44" rot="R180">
-<attribute name="PARTNO" x="207.01" y="91.44" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
 <instance part="GND6" gate="1" x="210.82" y="81.28"/>
 <instance part="P+6" gate="G$1" x="170.18" y="86.36"/>
 <instance part="D4" gate="G$1" x="208.28" y="63.5" rot="MR0">
@@ -9518,9 +9534,6 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <instance part="R1" gate="G$1" x="168.91" y="-86.36" rot="R90">
 <attribute name="PARTNO" x="168.91" y="-86.36" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R2" gate="G$1" x="168.91" y="-101.6" rot="R90">
-<attribute name="PARTNO" x="168.91" y="-101.6" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="D7" gate="G$1" x="186.69" y="-104.14">
 <attribute name="PARTNO" x="186.69" y="-104.14" size="1.778" layer="96" display="off"/>
 </instance>
@@ -9532,9 +9545,6 @@ Inverting buffer added to RTC for Electron WKP.</text>
 </instance>
 <instance part="GND2" gate="1" x="64.77" y="62.23"/>
 <instance part="P+4" gate="G$1" x="64.77" y="102.87"/>
-<instance part="C2" gate="G$1" x="64.77" y="46.99" rot="R270">
-<attribute name="PARTNO" x="64.77" y="46.99" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
 <instance part="C3" gate="G$1" x="57.15" y="46.99" rot="R270">
 <attribute name="PARTNO" x="57.15" y="46.99" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
@@ -9584,6 +9594,19 @@ Inverting buffer added to RTC for Electron WKP.</text>
 </instance>
 <instance part="U$12" gate="G$1" x="412.75" y="-7.62" rot="R90"/>
 <instance part="CN4" gate="G$1" x="271.78" y="93.98" rot="R90"/>
+<instance part="C5" gate="G$1" x="207.01" y="91.44" smashed="yes">
+<attribute name="NAME" x="201.93" y="92.71" size="1.27" layer="95" ratio="10"/>
+<attribute name="VALUE" x="205.74" y="92.71" size="1.27" layer="96" ratio="10"/>
+</instance>
+<instance part="C1" gate="G$1" x="64.77" y="46.99" smashed="yes" rot="R90">
+<attribute name="NAME" x="63.5" y="41.91" size="1.27" layer="95" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="63.5" y="45.72" size="1.27" layer="96" ratio="10" rot="R90"/>
+</instance>
+<instance part="R3" gate="G$1" x="168.91" y="-101.6" rot="R270"/>
+<instance part="R2" gate="G$1" x="191.77" y="7.62" rot="R270"/>
+<instance part="U$9" gate="G$1" x="360.68" y="-81.28" rot="R270"/>
+<instance part="CN5" gate="G$1" x="386.08" y="-39.37" rot="R90"/>
+<instance part="U$10" gate="G$1" x="382.27" y="-48.26"/>
 </instances>
 <busses>
 </busses>
@@ -9796,9 +9819,9 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <label x="396.24" y="36.83" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="210.82" y1="83.82" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -9811,9 +9834,9 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <wire x1="172.72" y1="63.5" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="168.91" y1="-105.41" x2="168.91" y2="-109.22" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="D7" gate="G$1" pin="A2"/>
@@ -9842,9 +9865,9 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="57.15" y1="43.18" x2="57.15" y2="41.91" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="57.15" y1="43.18" x2="64.77" y2="43.18" width="0.1524" layer="91"/>
 <junction x="57.15" y="43.18"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -9880,6 +9903,16 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <pinref part="U$12" gate="G$1" pin="GND"/>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="412.75" y1="-7.62" x2="410.21" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="U$9" gate="G$1" pin="GND"/>
+<wire x1="360.68" y1="-81.28" x2="361.95" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CN5" gate="G$1" pin="P$1"/>
+<pinref part="U$10" gate="G$1" pin="GND"/>
+<wire x1="382.27" y1="-48.26" x2="382.27" y2="-46.99" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -10218,14 +10251,14 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <segment>
 <wire x1="191.77" y1="22.86" x2="191.77" y2="11.43" width="0.1524" layer="91"/>
 <label x="187.96" y="24.13" size="1.27" layer="95" ratio="10"/>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <wire x1="191.77" y1="1.27" x2="191.77" y2="3.81" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="D11" gate="LED" pin="+"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -10335,16 +10368,12 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <wire x1="433.07" y1="-111.76" x2="355.6" y2="-111.76" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="-111.76" x2="355.6" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="355.6" y1="-86.36" x2="355.6" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="-81.28" x2="355.6" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="-86.36" x2="355.6" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="-76.2" x2="361.95" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="361.95" y1="-81.28" x2="355.6" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="361.95" y1="-86.36" x2="355.6" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="VOUT"/>
 <junction x="419.1" y="-66.04"/>
-<junction x="355.6" y="-81.28"/>
 <junction x="355.6" y="-76.2"/>
 <junction x="355.6" y="-86.36"/>
 </segment>
@@ -10419,9 +10448,9 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="57.15" y1="54.61" x2="57.15" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="64.77" y1="50.8" x2="57.15" y2="50.8" width="0.1524" layer="91"/>
 <junction x="57.15" y="50.8"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="G$1" pin="3.3V"/>
@@ -10536,17 +10565,21 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <wire x1="275.59" y1="86.36" x2="283.21" y2="86.36" width="0.1524" layer="91"/>
 <label x="279.4" y="86.36" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="389.89" y1="-46.99" x2="389.89" y2="-48.26" width="0.1524" layer="91"/>
+<label x="391.16" y="-48.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="5V" class="1">
 <segment>
 <pinref part="U$2" gate="G$1" pin="5V"/>
 <wire x1="198.12" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="83.82" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="91.44" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
 <junction x="200.66" y="91.44"/>
 <pinref part="IC2" gate="G$1" pin="VCC"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="5V"/>
@@ -10680,7 +10713,6 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <net name="VBAT" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="168.91" y1="-90.17" x2="168.91" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="D7" gate="G$1" pin="COM"/>
 <wire x1="168.91" y1="-93.98" x2="168.91" y2="-97.79" width="0.1524" layer="91"/>
@@ -10690,6 +10722,7 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <label x="194.31" y="-93.98" size="1.778" layer="95"/>
 <junction x="186.69" y="-93.98"/>
 <junction x="168.91" y="-93.98"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="-49.53" x2="43.18" y2="-49.53" width="0.1524" layer="91"/>
@@ -10818,6 +10851,16 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <junction x="293.37" y="30.48"/>
 <wire x1="293.37" y1="30.48" x2="287.02" y2="30.48" width="0.1524" layer="91"/>
 <label x="279.4" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="ANT_SW"/>
+<wire x1="378.46" y1="-58.42" x2="375.92" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="-58.42" x2="375.92" y2="-52.07" width="0.1524" layer="91"/>
+<pinref part="CN5" gate="G$1" pin="P$2"/>
+<wire x1="375.92" y1="-52.07" x2="386.08" y2="-52.07" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="-52.07" x2="386.08" y2="-46.99" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
