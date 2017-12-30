@@ -9173,6 +9173,59 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Retired">
+<description>&lt;h3&gt;SparkFun Electronics' Retired foot prints&lt;/h3&gt;
+In this library you'll find all manner of retired footprints for resistors, capacitors, board names, ICs, etc., that are &lt;b&gt; no longer used&lt;/b&gt; in our catalog.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="FIDUCIAL-1.5X3">
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2.5">
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL" prefix="FID">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1.5X3" package="FIDUCIAL-1.5X3">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2.5" package="FIDUCIAL-1X2.5">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9346,6 +9399,10 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="U$9" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="CN5" library="Seeed-Connector" deviceset="DIP-BLACK-MALE-HEADER-VERT(3P-2.54)" device="" value="3p-2.54"/>
 <part name="U$10" library="Power or GND " deviceset="GND_POWER" device=""/>
+<part name="FID1" library="SparkFun-Retired" deviceset="FIDUCIAL" device="1.5X3"/>
+<part name="FID2" library="SparkFun-Retired" deviceset="FIDUCIAL" device="1.5X3"/>
+<part name="FID3" library="SparkFun-Retired" deviceset="FIDUCIAL" device="1.5X3"/>
+<part name="FID4" library="SparkFun-Retired" deviceset="FIDUCIAL" device="1.5X3"/>
 </parts>
 <sheets>
 <sheet>
@@ -9607,6 +9664,10 @@ Inverting buffer added to RTC for Electron WKP.</text>
 <instance part="U$9" gate="G$1" x="360.68" y="-81.28" rot="R270"/>
 <instance part="CN5" gate="G$1" x="386.08" y="-39.37" rot="R90"/>
 <instance part="U$10" gate="G$1" x="382.27" y="-48.26"/>
+<instance part="FID1" gate="G$1" x="109.22" y="-111.76"/>
+<instance part="FID2" gate="G$1" x="114.3" y="-111.76"/>
+<instance part="FID3" gate="G$1" x="119.38" y="-111.76"/>
+<instance part="FID4" gate="G$1" x="124.46" y="-111.76"/>
 </instances>
 <busses>
 </busses>
